@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>html forms</title>
+</head>
+<body>
+    <h2>Your Info</h2>
+    <form>
+        <label for="Email">Email:</label>
+        <input type="email" id="user-email" name="user-email" placeholder="Enter email here" required>
+        <br>
+        <br>
+        <label for="quantity">Number of Pets:</label>
+        <input type="number" id="quantity" name="Number of Pets" min="1" max="3" step="1" aria-labelledby="quantity-label">
+        <br>
+        <br>
+        <label for="date">Today's Date:</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <br>
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="18" max="75" step="1" aria-labelledby="age-label">
+        <br>
+        <br>
+        <label for="language">Favorite Progeamming Languatge:</label><br>
+        <select id="language" name="language">
+            <option value="python">Python</option>
+            <option value="HTML">HTML</option>
+            <option value="javascript">Javascript</option>
+        </select>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Level of Expertise</legend>
+            <input type="radio" id="beginner" name="expertise" value="beginner" aria-labelledby="beginner-label">
+            <label for="beginner">Beginner</label><br>
+            <input type="radio" id="intermediate" name="expertise" value="intermediate" aria-labelledby="intermediate-label">
+            <label for="intermediate">Intermediate</label><br>
+            <input type="radio" id="advanced" name="expertise" value="advanced" aria-labelledby="advanced-label">
+            <label for="advanced">Advanced</label>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Preferred Development Platforms:</legend>
+            <input type="checkbox" id="web" name="platform" value="web" aria-labelledby="web-label">
+            <label for="web">Web</label>
+            <input type="checkbox" id="mobile" name="platform" value="mobile" aria-labelledby="mobile-label">
+            <label for="mobile">Mobile</label>
+            <input type="checkbox" id="desktop" name="platform" value="desktop" aria-labelledby="desktop-label">
+            <label for="desktop">Desktop</label>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+
+
+    </form> 
+
+
+</body>
+</html>
